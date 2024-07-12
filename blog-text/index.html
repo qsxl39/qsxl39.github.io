@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+		.birds-box {
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			background: url('backimage3.jpeg') no-repeat center center / cover;
+		}
+	</style>
+
+
+
+
+	      <!-- 引入重置样式 -->
+		  <link rel="stylesheet" href="./css/reset.css">
+		  <!-- 引入样式 -->
+		   <link rel="stylesheet" href="./css/index.css">
+
+
+
+
+	 
+</head>
+  <body>
+
+
+
+	    <!-- 顶部导航条 -->
+		<div class="topbar">
+			<!-- 版心 -->
+			<div class="container clearfix">
+				<!-- 左侧的欢迎区 -->
+				<div class="welcome leftfix">
+					<span class="hello"></span>
+					<a href="#" class="login"></a>
+					<a href="#" class="register">登录</a>
+			</div>
+				<!-- 右侧的导航区 -->
+				<div class="topbar-nav rightfix">
+					<ul class="list clearfix">
+						<li><a href="#bz">壁纸</a></li>
+						<li><a href="#">照片</a></li>
+						<li><a href="#sj">书籍</a></li>
+						<li><a href="#">电影</a></li>
+						<li><a href="#">留言板</a></li>
+						<li><a href="#">小游戏</a></li>
+						<li><a href="#">更新日志</a></li>
+					</ul>
+				</div>
+			</div>
+		 </div>
+
+
+		 
+
+
+
+	<!-- 飞鸟特效的容器 -->
+	<div class="birds-box"></div>
+
+	<script src="three.min.js"></script>
+    <script src="vanta.birds.min.js"></script>
+	<script>
+		VANTA.BIRDS({
+			el: ".birds-box", // 飞鸟容器
+			mouseControls: true,
+			touchControls: false,
+			gyroControls: false,
+			minHeight: 200.00,
+			minWidth: 200.00,
+			scale: 1.00,
+			scaleMobile: 1,
+			backgroundAlpha: 0.3,
+			color1: 0x1a6138,
+			color2: 0xf6f7f7
+		})
+	</script>
+
+
+
+
+
+
+
+     <!-- 头部 -->
+      <div class="header">
+        <div class="container clearfix">
+
+
+			            <!-- 右侧搜索区域 -->
+						<div class="search rightfix">
+							<form action="#">
+								<input type="text">
+								<button class="button sousuo">搜一下</button>
+							</form>
+						</div>
+						</form>
+					</div>
+            <!-- 左侧logo区域 -->
+
+
+
+
+
+
+
+
+
+
+
+	<!-- #region伸缩侧边栏  -->
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			  <div class="wrap">
+				<div class="nav">
+					<div class="btn">
+						<div class="btn-item"></div>
+						<div class="btn-item"></div>
+						<div class="btn-item"></div>
+					</div>
+					<div class="icon">
+						<div class="icom-img"><img  src="./images/玛卡巴卡.jpg" alt="妈的巴卡"></div>
+						<div class="icon-con">
+							<p>Good Day</p>
+							<h2>MaKaBaKa</h2>
+						</div>
+					</div>
+
+					<div class="line"></div>
+					<div class="title">
+						<p>menu 6</p>
+					</div>
+
+					<!-- #region小图标 -->
+					<div class="menu">
+
+
+						<div class="item">
+							<div class="light"></div>
+							<div class="licon">
+								<div class="iconfont icon-wenjian1">☆</div>
+							</div>
+							<div class="con">文字</div>
+							<div class="ricon">📞</div>
+						</div>
+
+						<div class="item">
+							<div class="light"></div>
+							<div class="licon">
+								<div class="iconfont icon-wenjian1">☆</div>
+							</div>
+							<div class="con">文字</div>
+							<div class="ricon">🗒</div>
+						</div>
+
+						
+						<div class="item">
+							<div class="light"></div>
+							<div class="licon">
+								<div class="iconfont icon-wenjian1">☆</div>
+							</div>
+							<div class="con">文字</div>
+							<div class="ricon">📱</div>
+						</div>
+
+						<div class="item">
+							<div class="light"></div>
+							<div class="licon">
+								<div class="iconfont icon-wenjian1">☆</div>
+							</div>
+							<div class="con">文字</div>
+							<div class="ricon">💫</div>
+						</div>
+
+						<div class="item">
+							<div class="light"></div>
+							<div class="licon">
+								<div class="iconfont icon-wenjian1">☆</div>
+							</div>
+							<div class="con">文字</div>
+							<div class="ricon">👖</div>
+						</div>
+
+
+						<div class="item">
+							<div class="light"></div>
+							<div class="licon">
+								<div class="iconfont icon-wenjian1">☆</div>
+							</div>
+							<div class="con">文字</div>
+							<div class="ricon">🎀</div>
+						</div>
+					</div>
+
+
+						<!-- #endregion小图标 -->
+
+						<!-- 第二个分割线 -->
+						<div class="line"></div>
+						<div class="title">
+							<p>Sever 6</p>
+						</div>
+
+						<div class="serve">
+
+								<!-- #region小图标（下） -->
+							<div class="item">
+								<div class="light"></div>
+								<div class="licon">
+									<div class="iconfont icon-wenjian1">☆</div>
+								</div>
+								<div class="con">文字</div>
+								<div class="ricon">🥫</div>
+							</div>
+
+							<div class="item">
+								<div class="light"></div>
+								<div class="licon">
+									<div class="iconfont icon-wenjian1">☆</div>
+								</div>
+								<div class="con">文字</div>
+								<div class="ricon">🍞</div>
+							</div>
+
+							<div class="item">
+								<div class="light"></div>
+								<div class="licon">
+									<div class="iconfont icon-wenjian1">☆</div>
+								</div>
+								<div class="con">文字</div>
+								<div class="ricon">🍉</div>
+							</div>
+
+							<div class="item">
+								<div class="light"></div>
+								<div class="licon">
+									<div class="iconfont icon-wenjian1">☆</div>
+								</div>
+								<div class="con">文字</div>
+								<div class="ricon">🛴</div>
+							</div>
+
+							<!-- #endregion小图标（下） -->
+
+
+						</div>
+
+
+
+					</div>
+
+
+
+
+
+				</div>
+			  </div>
+
+
+			  	<!-- #endregion伸缩侧边栏  -->
+            
+
+
+
+
+
+	  <!-- 主体区 -->
+
+
+	   <!-- 壁纸页面 -->
+
+	   <div class="shenti">
+		<div class="container">
+			<div class="button bizhi leftfix"><a name="bz">壁纸</a></div>	
+
+      <!-- 超级大图 -->
+
+	    <div class="picture1 leftfix "></div>
+    
+	    <div class="article1 rightfix"></div>
+	    <div class="article  rightfix"></div>
+    
+	    <div class="article  leftfix"></div>
+    
+	    <div class="picture2 rightfix"></div> 
+    
+	    <div class="article  leftfix"></div>
+    
+	    <div class="picture3 leftfix"></div>
+    
+	    <div class="article  rightfix"></div>
+	    <div class="article  rightfix"></div>
+    
+	    <div class="article  leftfix"></div>
+    
+	    <div class="picture4 rightfix"></div>
+    
+	    <div class="article  leftfix"></div>
+
+
+	     <!-- 推荐书籍 -->
+		 <div class="container">
+			<div class="button bizhi leftfix"><a name="sj">推荐书籍</a></div>
+
+
+		 <div class="books">
+
+			<div class="book">
+				<div class="cover">
+					<img src="./images/毛选.jpg" alt="">
+				</div>
+				<div class="content">
+					<a href="./pdf/乇选集完全体.pdf">
+					谁是我们的敌人？谁是我们的朋友？这个问题是革命的首要问题。中国过去一切革命斗争成
+					效甚少，其基本原因就是因为不能团结真正的朋友，以攻击真正的敌人。革命党是群众的向
+					导，在革命中未有革命党领错了路而革命不失败的。我们的革命要有不领错路和一定成功的
+					把握，不可不注意团结我们的真正的朋友，以攻击我们的真正的敌人。我们要分辨真正的敌
+					友，不可不将中国社会各阶级的经济地位及其对于革命的态度，作一个大概的分析。
+				</div>
+			    </a>
+			</div>
+
+
+
+			<div class="book">
+				<div class="cover">
+					<img src="./images/哲学.png" alt="">
+				</div>
+				<div class="content">
+					<a href="./pdf/哲学原来这么好.pdf">
+					卡尔●马克思
+
+					KARLHeNKIcHMARX
+					
+					德国哲学家、经济学家。出生于德国的特里尔。先后于波恩大学、柏林大学学习法律。哲学和
+					历史，加入了黑格尔左派的知识分子团体。担任《莱茵报》主笔后因批评政府而被掀职，移居
+					巴黎。此后又陆续移居比利时、巴黎、德国于一八四九年流亡伦敦。在大英博物馆醉心于经济
+					学的研究。
+				    </a>
+				</div>
+			</div>
+
+
+
+			<div class="book">
+				<div class="cover">
+					<img src="./images/爱的艺术.png" alt="">
+				</div>
+				<div class="content">
+					<a href="./pdf/爱的艺术.pdf">
+					这本书必定会使所有期望从这本书得到掌握爱的艺术秘诀的读者大失所望。恰恰相反，这本
+					书要告诉读者，爱情不是一种与人的成熟程度无关，只需要投人身心的感情。这本书要说服
+					读者:如果不努力发展自己的全部人格并以此达到一种创造倾向性，那么每种爱的试图都会失
+					败;如果没有爱他人的能力，如果不能真正谦恭地、勇敢地、真诚地和有纪律地爱他人，那么
+					人们在自己的爱情生活中也永远得不到满足。每个人都可以问问自己，你确实见过多少真正有
+					能力爱的人呢?
+				    </a>
+				</div>
+			</div>
+
+
+
+
+ </div>
+</div>
+</div>
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,587 @@
+/*#region 基础设施 */
+.container{
+    width: 1834px;
+
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+body{
+
+}
+
+
+/*#endregion 基础设施 */
+
+
+/*#region 顶部导航条开始*/
+
+.topbar{
+    height: 40px;
+
+}
+.welcome{
+    height: 40px;
+    line-height: 40px;
+    font-size: 0;
+    color: rgb(255, 255, 255);
+}
+.welcome span,.welcome a {
+    font-size: 24px;
+
+}
+
+.welcome .hello,.welcome .login,.welcome .register
+
+,div.topbar-nav li a 
+
+{
+    color:rgb(255, 255, 255);
+    text-shadow:  2px 2px 5px  #222222;
+
+}
+
+div.topbar-nav {
+    font-size: 0;
+}
+
+.topbar-nav li a {
+    font-size: 24px;
+
+}
+
+.topbar-nav .list li{
+    float: left;
+}
+
+.topbar-nav .list{
+    height: 40px;
+    line-height: 40px;
+}
+
+.topbar-nav .list li a{
+    padding: 0 24px;
+    border-right: 4px solid rgb(0, 0, 0,0.4);
+    
+}
+
+
+
+/*#endregion 顶部导航条结束 */
+
+
+/* #region伸缩侧边栏 */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.wrap{
+    width: 280px;
+    height: 820px;
+    margin-top: 0px;
+    margin-left: 120px;
+    margin-bottom: 120px;
+    background: url(../images/.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.nav{
+    width: 110px;
+    height: 820px;
+    background: rgba(0, 0, 0,0.4);
+    border-radius: 20px;
+    overflow: hidden; 
+    transition: 0.5s;
+}
+.nav:hover{
+    width: 280px;
+}
+
+.btn{
+    width: 60px;
+    height: 10px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.btn-item{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.btn-item:nth-child(1){
+    background:#eb5a56;
+}
+
+.btn-item:nth-child(2){
+    background:#f8bc33;
+}
+.btn-item:nth-child(3){
+    background:#62cb44;
+}
+
+.icon{
+    width: 250px;
+    height: 60px;
+    margin-left: 25px;
+    margin-right: 20px;
+    display: flex;
+}
+
+.icom-img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid rgb(255, 255, 255,.3);
+    overflow: hidden;
+}
+
+.icom-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.icon-con{
+    height: 60px;
+    margin-left: 25px;
+}
+
+.icon-con p{
+    padding-top: 5px;
+}
+
+.icon-con h2{
+    font-weight: 400;
+}
+
+.line{
+    width:60px ;
+    height: 1px;
+    background-color: rgba(245,253,255,0.5);
+    margin: 20px 25px;
+    transition: 0.5s;
+}
+
+.nav:hover .line{
+    width: 230px;
+}
+
+.title{
+    width: 60px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+}
+
+.title p{
+    font-size: 14px;
+}
+
+.menu{
+    width: 230px;
+    margin-left: 25px;
+}
+
+.item{
+    display: flex;
+    position: relative;
+    transition: 0.5s;
+    border-radius: 6px;
+}
+
+.item:hover{
+    background: rgba(255,255,255,0.1);
+}
+
+.licon{
+    width: 60px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con{
+    width: 0;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    overflow: hidden;
+    position: relative;
+    left: -20px;
+    opacity: 0;
+}
+
+.nav:hover .con{
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+
+ .ricon{
+    width: 0;
+    height: 50px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    opacity: 0;
+}  
+ 
+.nav:hover .ricon {
+    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+} 
+
+
+.iconfont{
+    font-size: 26px;
+}
+
+.ricon {
+    font-size: 24px;
+    color: #62cb44;
+}
+
+/* 上次标绿节点 */
+
+.light{
+    width: 6px;
+    height: 50px;
+    background:#eb5a56;
+    position: absolute;
+    left: -25px;
+    transition: 0.5s;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    opacity: 0;
+}
+
+.item:hover .light{
+    opacity: 1;
+}
+
+.serve{
+    width: 60px;
+    background: rgba(0,0,0,0.7);
+    margin-left: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s; 
+}
+
+.nav:hover .serve{
+    width: 230px;
+}  
+
+
+
+
+/* #endregion伸缩侧边栏 */
+
+
+
+
+
+
+/*#region 头部开始*/
+
+.header{
+    height: 120px;
+
+}
+
+.makabaka{
+    height: 60px;
+    width: 60px;
+    border-radius: 100px 100px 100px 100px;
+    
+}
+
+.header .search form{
+    margin-top: 24px;
+    font-size: 0;
+}
+
+/* 搜索和按钮，边框和特效 */
+.header .search input{
+    width: 508px;
+    height: 34px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0,0);
+}
+
+.header .search button
+,.header .search input
+,.button{
+
+    position: relative;
+
+    width: 120px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255,0);
+    border-radius: 5px 5px 5px 5px;
+    overflow: hidden;
+    transition: .5s;
+    vertical-align: top;
+
+    font-size: 24px;
+    font-family: "新宋体";
+}
+
+.header .search button::after
+,.header .search input::after
+,.button::after{
+
+    position: absolute;
+    top: 0;
+    left: -100%;
+
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg,transparent,#fff,transparent);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.header .search button:hover
+,.header .search input:hover
+,.button:hover{
+    box-shadow: 0 0 10px 1px #fff;
+}
+
+.header .search button:hover::after
+,.header .search input:hover::after
+,.button:hover::after{
+    left: 100%;
+}
+
+.header .search input{
+    width: 508px;
+    height: 40px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0,0);
+}
+
+
+/*#endregion 头部结束*/
+
+/*#region 主体区 */
+.main-nav{
+    height: 800px;
+}
+
+.main-text{
+    color: white;
+    font-size: 4em;
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    z-index: 1;
+
+}
+
+
+/*#endregion 主体区 */
+
+/*#region 主体页面 */
+
+.shenti .container{
+    height: 6800px;
+    width: 1834px;
+    background-color: rgb(255, 255, 255,.5);
+    box-shadow: -2px -2px 15px 1px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 15px 1px rgb(0, 0, 0,0.2);
+    border-radius: 20px;
+
+}
+
+/*#region 壁纸图标 */
+.bizhi{
+    text-align: center;
+    height: 52px;
+    width: 320px;
+    box-shadow: -2px -2px 15px 1px rgba(255, 255, 255, 0.2);
+    box-shadow: 2px 2px 15px 1px rgb(0, 0, 0,0.2);
+    border-radius: 15px 15px 15px 15px;
+    margin: 100px 756px 0px 756px ;
+}
+
+.picture1
+,.picture2
+,.picture3
+,.picture4
+{
+    height: 452px;
+    width: 837px;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    margin-left: 40px ;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: -2px -2px 15px 1px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 15px 1px rgb(0, 0, 0,0.2);
+}
+.picture1{
+    background-image: url(../images/中壁纸.png);
+    margin-top: 80px;
+}
+
+.picture2{
+    background-image: url(../images/壁纸2.png);
+}
+.picture3{
+    background-image: url(../images/壁纸3.png);
+}
+
+.picture4{
+    background-image: url(../images/壁纸4.png);
+}
+
+.article
+,.article1{
+    height: 186px;
+    width: 837px;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    margin-left: 40px ;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: -2px -2px 15px 1px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 15px 1px rgb(0, 0, 0,0.2);
+    background-color: aqua;
+}
+
+.article1{
+    margin-top: 80px;
+}
+
+
+/*#endregion 壁纸图标 */
+
+.bianjie{
+    height: 20px;
+    color: #000033;
+}
+
+
+/*#region 推荐书籍 */
+.books{
+    width: 381px;
+    height: 504px;
+    margin: 40px;
+    display: flex;
+    align-items: center;
+    gap: 600px;
+}
+
+.book{
+
+    position: relative;
+    transition: all .4s ease-in-out;
+    perspective: 1800px;
+}
+
+.book:hover{
+    transform:rotateZ(-10deg);
+}
+
+.cover{
+    width: 381px;
+    height: 504px;
+    margin: 40px;
+    margin-top: 80px;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    border-radius: 20px 60px 60px 20px;
+    overflow: hidden;
+    z-index: 10;
+    transition: all .4s ease-in-out;
+    transform-origin: left center 0;
+    box-shadow: -30px 30px 60px -30px #bab5b5;
+}
+.book:hover .cover{
+    transform:rotateY(-60deg);
+    box-shadow: 60px 30px 150px  rgb(0, 0, 0,.2);
+}
+
+
+
+
+.cover img{
+    width: 100%;
+    height: 100%;
+}
+
+.content{
+    width: 321px;
+    height: 444px;
+    margin: 40px;
+    margin-top: 80px;
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    background-color: #fbfae8;
+    padding: 30px;
+    text-align: justify;
+    border-radius: 20px 60px 60px 20px;
+    background-color: #fbfae8;
+    color: #666;
+    box-shadow: -30px 30px 60px -30px #bab5b5;
+}
+
+.book2{
+    margin-top: 2800px;
+}
+
+/* #region AI生成解决方案 */
+
+
+.book {
+    width: 30%; /* 每个书籍占据父容器的30%宽度，留出一些空隙 */
+    float: left; /* 浮动到左侧 */
+    box-sizing: border-box; /* 确保内边距和边框包含在宽度内 */
+    padding: 10px; /* 适当的内边距 */
+}
+
+.books-container {
+    width: 100%; /* 确保容器占据整个宽度 */
+}
+
+.clearfix {
+    clear: both; /* 清除浮动 */
+}
+
+/* 每行只显示三个书籍 */
+.book:nth-child(3n+1) {
+    clear: left; /* 每第四个书籍换行 */
+}
+
+/* #endregion AI生成解决方案 */
+
+/*#endregion 推渐书籍 */
+
+
+
+/*#endregion 超级大图 */
